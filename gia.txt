@@ -1,0 +1,31 @@
+Cambiar usuario git
+Para cambiar el usuario es:
+git config --global user.name "<nombre>"
+Para cambiar el email es:
+git config --global user.email <email>
+
+ver listado
+git config --global --list
+
+--conectar con github
+crear un directorio con el nombre deseado ejemplo: "pruebagit"
+crear una cuenta en github, crear un proyecto(se recomienda que sea igual al nombre del directorio)
+copiar la url del proyecto 
+abrir git desde la carpeta(windows click derecho git bash here)
+
+git init
+git remote add origin <url-a-repo-github>
+
+para agregar un archivo
+git add <archivo>
+
+para subir los cambios
+git commit
+luego tocar el boton esc
+escribir la descripcion de lo que se hizo, luego el btn esc y escribir :wq +enter
+
+subir los archivos
+git push origin master
+
+para poder conectarte a un remoto
+git remote add <nombre-que-elijas> <url>
