@@ -20,7 +20,7 @@ para agregar un archivo
 git add <archivo>
 
 para subir los cambios
-git commit
+git commit -a
 luego tocar el boton esc
 escribir la descripcion de lo que se hizo, luego el btn esc y escribir :wq +enter
 
