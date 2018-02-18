@@ -19,6 +19,9 @@ git remote add origin <url-a-repo-github>
 para agregar un archivo
 git add <archivo>
 
+para subir cambios de un archivo
+git commit <archivo>
+
 para subir los cambios
 git commit -a
 luego tocar el boton esc
@@ -38,3 +41,26 @@ git checkout <branch> //devep, master
 
 unir dos ramas 
 git merge
+
+/****************************** Caracteristicas ********************************/
+Bloque Android S.O.
+Version: 5.1
+
+Bloque Base de Datos
+Postgres 9.4
+DBMS PgAdmin III
+
+Bloque Colores Funcionalidades
+Amarillo - Login
+Azul - Admin
+Verde - Scrum
+
+Bloque Android Studio
+Android Studio Bundle 143.2915827 Windows
+Android Studio Ide 171.4443003 Windows
+
+Bloque Git
+Git 2.16.1.4-64
+
+Bloque SQL Power Architect 
+SQL Power Architect 1.0.6
