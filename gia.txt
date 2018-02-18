@@ -32,3 +32,9 @@ git remote add <nombre-que-elijas> <url>
 
 para traer todos los datos del remoto
 git pull <nombre-que-elijas> <branch>
+
+movernos a otra rama
+git checkout <branch> //devep, master 
+
+unir dos ramas 
+git merge
