@@ -29,3 +29,6 @@ git push origin master
 
 para poder conectarte a un remoto
 git remote add <nombre-que-elijas> <url>
+
+para traer todos los datos del remoto
+git pull <nombre-que-elijas> <branch>
