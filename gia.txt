@@ -67,6 +67,36 @@ git branch(* en cual estas)
   subir todos tus cambios
   git commit -a(buscar explicacion arriba)
   git push
+
+--
+
+Si tenes dos proyectos en git y pero para diferentes correos y diferentes
+repositorios
+git config --local user.email <correo electronico>
+git config --local user.name  <"nombre">
+
+para ver los remotos a lo que esta vinculado ese repositorio
+git remote -v
+
+para vincular las ramas la remota y local
+git push -u <nombre-que-elijas> <branch>
+
+--Ramas (Branch)
+  para crear ramas
+  git branch <nombre de rama>
+
+  ver ramas
+  git branch
+
+  desplazarte a otra rama
+  git checkout -b ramanueva
+
+  borrar rama
+  git branch -d <nombre de rama>
+
+  borrar rama incluso si hay commits
+  git branch -D <nombre de rama>
+
 --
 
 /****************************** Caracteristicas ********************************/
