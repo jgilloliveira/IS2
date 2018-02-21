@@ -40,7 +40,34 @@ movernos a otra rama
 git checkout <branch> //devep, master 
 
 unir dos ramas 
-git merge
+git merge <nombre-que-elijas>/master
+
+para ver el estado de tu repositorio local
+git status
+
+para traer los datos del repositorio remoto sin agregar al repositorio local
+git fetch origin o <nombre-que-elijas>
+
+para ver las ramas
+git branch(* en cual estas)
+
+--En caso de conflictos con commits
+  para enlistar y posterior guardar los datos que se modifico en tu repositorio local
+  (para evitar conflictos con commits)
+  git stash list
+
+  para salvaguardar tus modificaciones(encapsular) y evitar conflictos con commits
+  git stash
+  git status -s
+  git merge <nombre-que-elijas>/master
+  (trae del repositorio remoto, guarda en tu local sin subir tus cambios)
+
+  para traer devuelta tus cambios en tu repositorio local
+  git stash apply
+  subir todos tus cambios
+  git commit -a(buscar explicacion arriba)
+  git push
+--
 
 /****************************** Caracteristicas ********************************/
 Bloque Android S.O.
