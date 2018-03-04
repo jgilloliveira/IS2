@@ -6,13 +6,13 @@ INSERT INTO estado_proyecto VALUES(4,'Hecho');
 INSERT INTO estado_proyecto VALUES(5,'Descartada');
 
 -- Roles.
-INSERT INTO id_rol VALUES (1, "SCRUM MASTER");
-INSERT INTO id_rol VALUES (3, "TASK OWNER");
-INSERT INTO id_rol VALUES (4, "USER");
-INSERT INTO id_rol VALUES (5, "REPRESENTATIVE");
-INSERT INTO id_rol VALUES (6, "PROCUREMENT");
-INSERT INTO id_rol VALUES (7, "LEGALS");
-INSERT INTO id_rol VALUES (2, "PROJECT LEADER");
+INSERT INTO rol_sistema VALUES (1, "SCRUM MASTER");
+INSERT INTO rol_sistema VALUES (3, "TASK OWNER");
+INSERT INTO rol_sistema VALUES (4, "USER");
+INSERT INTO rol_sistema VALUES (5, "REPRESENTATIVE");
+INSERT INTO rol_sistema VALUES (6, "PROCUREMENT");
+INSERT INTO rol_sistema VALUES (7, "LEGALS");
+INSERT INTO rol_sistema VALUES (2, "PROJECT LEADER");
 
 -- Proyecto.
 ﻿INSERT INTO proyecto (id_proyecto, nombre, descripcion, fecha_inicio, fecha_fin, estado, cliente) VALUES (1, 'Aplicacion ', 'Aplicacion Movil', to_date('4-03-18','DD-MM-YY'), to_date('4-12-18','DD-MM-YY'), 1, 'Lilian Riveros');
