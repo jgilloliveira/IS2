@@ -1,3 +1,4 @@
+
 Cambiar usuario git
 Para cambiar el usuario es:
 git config --global user.name "<nombre>"
