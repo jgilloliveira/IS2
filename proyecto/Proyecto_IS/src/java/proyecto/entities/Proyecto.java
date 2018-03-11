@@ -39,8 +39,7 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Proyecto.findByNombre", query = "SELECT p FROM Proyecto p WHERE p.nombre = :nombre")
     , @NamedQuery(name = "Proyecto.findByDescripcion", query = "SELECT p FROM Proyecto p WHERE p.descripcion = :descripcion")
     , @NamedQuery(name = "Proyecto.findByFechaInicio", query = "SELECT p FROM Proyecto p WHERE p.fechaInicio = :fechaInicio")
-    , @NamedQuery(name = "Proyecto.findByFechaFin", query = "SELECT p FROM Proyecto p WHERE p.fechaFin = :fechaFin")
-    , @NamedQuery(name = "Proyecto.findByCliente", query = "SELECT p FROM Proyecto p WHERE p.cliente = :cliente")})
+    , @NamedQuery(name = "Proyecto.findByFechaFin", query = "SELECT p FROM Proyecto p WHERE p.fechaFin = :fechaFin")})
 public class Proyecto implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -67,11 +66,6 @@ public class Proyecto implements Serializable {
     @Column(name = "fecha_fin")
     @Temporal(TemporalType.DATE)
     private Date fechaFin;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 200)
-    @Column(name = "cliente")
-    private String cliente;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "proyectoGrupo")
     private Collection<GrupoDeTrabajo> grupoDeTrabajoCollection;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "proyecto")
@@ -87,12 +81,11 @@ public class Proyecto implements Serializable {
         this.idProyecto = idProyecto;
     }
 
-    public Proyecto(Integer idProyecto, String nombre, String descripcion, Date fechaInicio, String cliente) {
+    public Proyecto(Integer idProyecto, String nombre, String descripcion, Date fechaInicio) {
         this.idProyecto = idProyecto;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.fechaInicio = fechaInicio;
-        this.cliente = cliente;
     }
 
     public Integer getIdProyecto() {
@@ -133,14 +126,6 @@ public class Proyecto implements Serializable {
 
     public void setFechaFin(Date fechaFin) {
         this.fechaFin = fechaFin;
-    }
-
-    public String getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(String cliente) {
-        this.cliente = cliente;
     }
 
     @XmlTransient

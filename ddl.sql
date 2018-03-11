@@ -20,7 +20,6 @@ CREATE TABLE public.proyecto (
                 fecha_inicio DATE NOT NULL,
                 fecha_fin DATE,
                 estado INTEGER NOT NULL,
-                cliente VARCHAR(200) NOT NULL,
                 CONSTRAINT proyecto_pk PRIMARY KEY (id_proyecto)
 );
 

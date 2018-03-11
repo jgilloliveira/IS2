@@ -37,7 +37,6 @@ public class ProyectoFacadeREST extends AbstractFacade<Proyecto> {
 
     @POST
     @Override
-    // @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Consumes(MediaType.APPLICATION_JSON)
     public void create(Proyecto entity) {
         super.create(entity);
@@ -45,7 +44,6 @@ public class ProyectoFacadeREST extends AbstractFacade<Proyecto> {
 
     @PUT
     @Path("{id}")
-    // @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Consumes(MediaType.APPLICATION_JSON)
     public void edit(@PathParam("id") Integer id, Proyecto entity) {
         super.edit(entity);
@@ -59,7 +57,6 @@ public class ProyectoFacadeREST extends AbstractFacade<Proyecto> {
 
     @GET
     @Path("{id}")
-    // @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public Proyecto find(@PathParam("id") Integer id) {
         return super.find(id);
@@ -67,7 +64,6 @@ public class ProyectoFacadeREST extends AbstractFacade<Proyecto> {
 
     @GET
     @Override
-    // @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public List<Proyecto> findAll() {
         return super.findAll();
@@ -75,7 +71,6 @@ public class ProyectoFacadeREST extends AbstractFacade<Proyecto> {
 
     @GET
     @Path("{from}/{to}")
-    // @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public List<Proyecto> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});

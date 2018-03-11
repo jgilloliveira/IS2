@@ -37,7 +37,6 @@ public class EstadoKanbanFacadeREST extends AbstractFacade<EstadoKanban> {
 
     @POST
     @Override
-    // @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Consumes(MediaType.APPLICATION_JSON)
     public void create(EstadoKanban entity) {
         super.create(entity);
@@ -45,7 +44,6 @@ public class EstadoKanbanFacadeREST extends AbstractFacade<EstadoKanban> {
 
     @PUT
     @Path("{id}")
-    // @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Consumes(MediaType.APPLICATION_JSON)
     public void edit(@PathParam("id") Integer id, EstadoKanban entity) {
         super.edit(entity);
@@ -59,7 +57,6 @@ public class EstadoKanbanFacadeREST extends AbstractFacade<EstadoKanban> {
 
     @GET
     @Path("{id}")
-    // @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public EstadoKanban find(@PathParam("id") Integer id) {
         return super.find(id);
@@ -67,7 +64,6 @@ public class EstadoKanbanFacadeREST extends AbstractFacade<EstadoKanban> {
 
     @GET
     @Override
-    // @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public List<EstadoKanban> findAll() {
         return super.findAll();
@@ -75,7 +71,6 @@ public class EstadoKanbanFacadeREST extends AbstractFacade<EstadoKanban> {
 
     @GET
     @Path("{from}/{to}")
-    // @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Produces(MediaType.APPLICATION_JSON)
     public List<EstadoKanban> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});

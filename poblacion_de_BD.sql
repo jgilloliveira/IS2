@@ -15,7 +15,7 @@ INSERT INTO rol_sistema VALUES (7, 'LEGALS');
 INSERT INTO rol_sistema VALUES (2, 'PROJECT LEADER');
 
 -- Proyecto.
-﻿INSERT INTO proyecto (id_proyecto, nombre, descripcion, fecha_inicio, fecha_fin, estado, cliente) VALUES (1, 'Aplicacion ', 'Aplicacion Movil', to_date('4-03-18','DD-MM-YY'), to_date('4-12-18','DD-MM-YY'), 1, 'Lilian Riveros');
+﻿INSERT INTO proyecto (id_proyecto, nombre, descripcion, fecha_inicio, fecha_fin, estado) VALUES (1, 'Aplicacion ', 'Aplicacion Movil', to_date('4-03-18','DD-MM-YY'), to_date('4-12-18','DD-MM-YY'), 1);
 
 -- Grupo de trabajo.
 INSERT INTO grupo_de_trabajo VALUES (1,4,'Team Git',1);

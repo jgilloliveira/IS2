@@ -35,13 +35,6 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "Usuario.findByContrasenha", query = "SELECT u FROM Usuario u WHERE u.contrasenha = :contrasenha")})
 public class Usuario implements Serializable {
 
-    @JoinColumn(name = "grupo", referencedColumnName = "id_grupo")
-    @ManyToOne(optional = false)
-    private GrupoDeTrabajo grupo;
-    @JoinColumn(name = "rol", referencedColumnName = "id_rol")
-    @ManyToOne(optional = false)
-    private RolSistema rol;
-
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -68,6 +61,12 @@ public class Usuario implements Serializable {
     @Size(min = 1, max = 10)
     @Column(name = "contrasenha")
     private String contrasenha;
+    @JoinColumn(name = "grupo", referencedColumnName = "id_grupo")
+    @ManyToOne(optional = false)
+    private GrupoDeTrabajo grupo;
+    @JoinColumn(name = "rol", referencedColumnName = "id_rol")
+    @ManyToOne(optional = false)
+    private RolSistema rol;
 
     public Usuario() {
     }
@@ -124,6 +123,22 @@ public class Usuario implements Serializable {
         this.contrasenha = contrasenha;
     }
 
+    public GrupoDeTrabajo getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(GrupoDeTrabajo grupo) {
+        this.grupo = grupo;
+    }
+
+    public RolSistema getRol() {
+        return rol;
+    }
+
+    public void setRol(RolSistema rol) {
+        this.rol = rol;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -147,22 +162,6 @@ public class Usuario implements Serializable {
     @Override
     public String toString() {
         return "proyecto.entities.Usuario[ idUsuario=" + idUsuario + " ]";
-    }
-
-    public GrupoDeTrabajo getGrupo() {
-        return grupo;
-    }
-
-    public void setGrupo(GrupoDeTrabajo grupo) {
-        this.grupo = grupo;
-    }
-
-    public RolSistema getRol() {
-        return rol;
-    }
-
-    public void setRol(RolSistema rol) {
-        this.rol = rol;
     }
     
 }
