@@ -1,5 +1,0 @@
-<<<<<<< Updated upstream
-Cualquier cosa.
-=======
-Esto es una prueba por el mismo archivo por porfirio perez
->>>>>>> Stashed changes
