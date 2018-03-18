@@ -7,6 +7,7 @@ package proyecto.entities.service;
 
 import java.util.List;
 import javax.persistence.EntityManager;
+import proyecto.entities.Usuario;
 
 /**
  *
@@ -51,6 +52,15 @@ public abstract class AbstractFacade<T> {
         q.setMaxResults(range[1] - range[0] + 1);
         q.setFirstResult(range[0]);
         return q.getResultList();
+    }
+    
+    public boolean findUser(Usuario usuario) {
+        javax.persistence.Query q2 = getEntityManager().createNativeQuery("select count(u.nombre_usuario) "
+                + "from usuario u where lower(u.nombre_usuario) like lower('"+usuario.getNombreUsuario()+"') "
+                + "and lower(u.contrasenha) like lower('"+usuario.getContrasenha()+"');");
+        long resultado = (Long)q2.getSingleResult();
+        boolean respuesta = resultado>0;
+        return respuesta;
     }
 
     public int count() {

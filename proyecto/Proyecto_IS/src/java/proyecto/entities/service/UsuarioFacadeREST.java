@@ -61,6 +61,24 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     public Usuario find(@PathParam("id") Integer id) {
         return super.find(id);
     }
+    
+    //@GET
+    ////@Path("/login/{nombre_usuario")
+    //@Path("/login")
+    //@Consumes(MediaType.APPLICATION_JSON)
+    //@Produces(MediaType.TEXT_PLAIN)
+    //public Long findUser(@PathParam("nombreUsuario") String nombre_usuario) {
+    //    System.out.print(nombre_usuario);
+    //    return super.findUser(nombre_usuario);
+    //}
+    
+    @POST
+    @Path("/login")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
+    public boolean findUser(Usuario usuario) {
+        return super.findUser(usuario);
+    }
 
     @GET
     @Override
