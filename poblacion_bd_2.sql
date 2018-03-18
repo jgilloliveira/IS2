@@ -8,4 +8,6 @@ INSERT INTO estado_kanban(id_estado_kanban, descripcion) VALUES (2,'Haciendo');
 INSERT INTO estado_kanban(id_estado_kanban, descripcion) VALUES (3,'Hecho');
 
 --User Histories
-
+INSERT INTO user_histories VALUES (1,'Interface del login',1,1);
+INSERT INTO user_histories VALUES (2,'Programacion del login',1,1);
+INSERT INTO user_histories VALUES (3,'Pruebas del login',1,1);
