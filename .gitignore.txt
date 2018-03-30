@@ -1,0 +1,1 @@
+/proyecto/Proyecto_IS/build/web/WEB-INF/glassfish-resources.xml
