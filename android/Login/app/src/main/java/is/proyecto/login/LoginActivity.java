@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity implements Response.ErrorLi
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
-    private String URL = "http://192.168.0.24:8080/Proyecto_ISJG/webresources/proyecto.entities.usuario/login";
+    private String URL = "http://192.168.0.24:8080/Proyecto_IS/webresources/proyecto.entities.usuario/login";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
