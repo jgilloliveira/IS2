@@ -99,7 +99,20 @@ git push -u <nombre-que-elijas> <branch>
   git branch -D <nombre de rama>
 
 --
+--Para salto entre ramas sin necesidad de subir tus cambios
+  Guardar datos en un contenedor temporal
+  git stash
+  
+  saltar de rama lo mismo para volver
+  git checkout <nombreRama>
+  
+  aplicar cambios guardados
+  git stash apply
+  
+  eliminar contenedor temporal
+  git stash drop
 
+--
 /****************************** Caracteristicas ********************************/
 Bloque Android S.O.
 Version: 5.1
