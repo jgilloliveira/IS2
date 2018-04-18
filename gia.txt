@@ -113,6 +113,9 @@ git push -u <nombre-que-elijas> <branch>
   git stash drop
 
 --
+--Ver ramificaciones de ramas o divergencias
+  git log --oneline --graph --all
+--
 /****************************** Caracteristicas ********************************/
 Bloque Android S.O.
 Version: 5.1
