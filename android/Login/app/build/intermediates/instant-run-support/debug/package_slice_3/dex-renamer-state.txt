@@ -1,4 +1,0 @@
-#Sun Mar 25 17:20:02 PYT 2018
-base.0=/home/jacqueline/AndroidStudioProjects/Login/app/build/intermediates/transforms/dexMerger/debug/3
-path.0=classes.dex
-renamed.0=classes.dex
