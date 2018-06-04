@@ -1,2 +1,2 @@
-Integrantes
-- Oscar Vega, 5.359.542
+Integrantes:
+- Oscar Manuel Vega Martinez, 5.359.542
