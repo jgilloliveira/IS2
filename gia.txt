@@ -116,6 +116,44 @@ git push -u <nombre-que-elijas> <branch>
 --Ver ramificaciones de ramas o divergencias
   git log --oneline --graph --all
 --
+
+--Para subir los cambios sabiendo que hay commits que no tenes en la rama de trabajo
+  crear una nueva rama
+  git branch <nombre-rama>
+  
+  moverte a la rama nueva
+  git checkout
+  
+  ver todos tus cambios
+  git status -s(para ver cuales son modificacion(M) y cuales son nuevos (A))
+  
+  *si hay archivos nuevos
+   git add <direccion archivo>
+
+  bajar todo lo que hay en el repositorio remoto
+  git fetch
+
+  volver a la rama que queres subir tus cambios.
+  git checkout <nombre-rama>
+  
+  *si sale este mensaje al pasarte a la rama original significa no hay cambios nuevos
+    Your branch is up-to-date with 'origin/master'<nombre-rama>.
+    | pasarte a la rama que tiene tu commit
+    | git checkout <nombre-rama>
+    |
+    | poner tu commit ensima de la rama que va a tener tus cambios
+    | git rebase <nombre-rama-a-subir>
+    | 
+    | pasarte a la rama
+    | git checkout <nombre-rama>
+    | 
+    | unir las ramas
+    | git merge <nombre-rama-con-tus-cambios>
+    |
+    | subir cambios
+    | git push
+  
+
 /****************************** Caracteristicas ********************************/
 Bloque Android S.O.
 Version: 5.1
