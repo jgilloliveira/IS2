@@ -152,7 +152,9 @@ git push -u <nombre-que-elijas> <branch>
     |
     | subir cambios
     | git push
-  
+para crear alias
+git config --global alias.<nombre-alias> "comandos"
+git config --global alias.logoga "log --graph --oneline --all -10"
 
 /****************************** Caracteristicas ********************************/
 Bloque Android S.O.
