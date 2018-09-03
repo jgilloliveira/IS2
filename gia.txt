@@ -141,7 +141,7 @@ git push -u <nombre-que-elijas> <branch>
     | pasarte a la rama que tiene tu commit
     | git checkout <nombre-rama>
     |
-    | poner tu commit ensima de la rama que va a tener tus cambios
+    | poner tu commit encima de la rama que va a tener tus cambios
     | git rebase <nombre-rama-a-subir>
     | 
     | pasarte a la rama
